@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <rect width="760" height="560" fill="#fcfcfb"/>
+
+  <!-- Legend -->
+  <g font-size="12" fill="#52514e">
+    <rect x="40" y="22" width="14" height="14" rx="3" fill="#f2f1ed" stroke="#b9b8b3"/>
+    <text x="62" y="33">openpi, unchanged</text>
+    <rect x="200" y="22" width="14" height="14" rx="3" fill="#e6effa" stroke="#2a78d6"/>
+    <text x="222" y="33">tier 1 (this repo)</text>
+    <rect x="340" y="22" width="14" height="14" rx="3" fill="#fdeee6" stroke="#eb6834"/>
+    <text x="362" y="33">tier 2 switch</text>
+  </g>
+
+  <!-- LIBERO side -->
+  <rect x="40" y="70" width="280" height="70" rx="6" fill="#f2f1ed" stroke="#b9b8b3"/>
+  <text x="56" y="98" font-weight="600">LIBERO simulator</text>
+  <text x="56" y="120" fill="#52514e">stock client (examples/libero/main.py)</text>
+
+  <!-- Evaluation and measurement -->
+  <text x="40" y="186" font-weight="600" fill="#52514e">Evaluation and measurement</text>
+  <rect x="40" y="200" width="280" height="54" rx="6" fill="#e6effa" stroke="#2a78d6"/>
+  <text x="56" y="223" font-weight="600">scripts/libero_eval.sh</text>
+  <text x="56" y="242" fill="#52514e">one server, 4 suites in parallel</text>
+  <rect x="40" y="268" width="280" height="54" rx="6" fill="#e6effa" stroke="#2a78d6"/>
+  <text x="56" y="291" font-weight="600">scripts/profile_segments.py</text>
+  <text x="56" y="310" fill="#52514e">latency, profiler, graph breaks</text>
+  <rect x="40" y="336" width="280" height="54" rx="6" fill="#e6effa" stroke="#2a78d6"/>
+  <text x="56" y="359" font-weight="600">scripts/check_parity.py</text>
+  <text x="56" y="378" fill="#52514e">actions vs stock openpi, same inputs</text>
+  <rect x="40" y="404" width="280" height="54" rx="6" fill="#e6effa" stroke="#2a78d6"/>
+  <text x="56" y="427" font-weight="600">scripts/libero_summary.py</text>
+  <text x="56" y="446" fill="#52514e">LIBERO success rates</text>
+
+  <!-- Server and policy pipeline -->
+  <rect x="400" y="70" width="320" height="70" rx="6" fill="#e6effa" stroke="#2a78d6"/>
+  <text x="416" y="98" font-weight="600">scripts/serve.py</text>
+  <text x="416" y="120" fill="#52514e">noise = f(seed, observation), warm-up</text>
+
+  <line x1="320" y1="95" x2="398" y2="95" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="359" y="88" font-size="11" fill="#52514e" text-anchor="middle">observation</text>
+  <line x1="398" y1="118" x2="322" y2="118" stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="359" y="134" font-size="11" fill="#52514e" text-anchor="middle">10 actions</text>
+
+  <rect x="400" y="166" width="320" height="34" rx="6" fill="#f2f1ed" stroke="#b9b8b3"/>
+  <text x="416" y="188">openpi Policy: input transforms</text>
+  <rect x="400" y="214" width="320" height="50" rx="6" fill="#e6effa" stroke="#2a78d6"/>
+  <text x="416" y="235" font-weight="600">prune</text>
+  <text x="416" y="254" fill="#52514e">drop masked image and text padding: 968 to 576</text>
+
+  <!-- GPU region -->
+  <rect x="384" y="282" width="352" height="214" rx="8" fill="none" stroke="#b9b8b3" stroke-dasharray="5 4"/>
+  <text x="728" y="300" font-size="11" fill="#52514e" text-anchor="end">RTX 5090, one CUDA graph</text>
+  <rect x="400" y="308" width="320" height="50" rx="6" fill="#e6effa" stroke="#2a78d6"/>
+  <text x="416" y="329" font-weight="600">SigLIP, batchimg</text>
+  <text x="416" y="348" fill="#52514e">both cameras in one batch</text>
+  <rect x="400" y="370" width="320" height="50" rx="6" fill="#f2f1ed" stroke="#b9b8b3"/>
+  <text x="416" y="391" font-weight="600">Gemma 2B prefix</text>
+  <text x="416" y="410" fill="#52514e">576 tokens, builds the KV cache</text>
+  <rect x="644" y="382" width="64" height="26" rx="4" fill="#fdeee6" stroke="#eb6834"/>
+  <text x="676" y="399" font-size="12" text-anchor="middle">INT8</text>
+  <rect x="400" y="432" width="320" height="50" rx="6" fill="#e6effa" stroke="#2a78d6"/>
+  <text x="416" y="453" font-weight="600">denoise × N, action expert</text>
+  <text x="416" y="472" fill="#52514e">static schedule; cond: lookup table</text>
+  <rect x="644" y="444" width="64" height="26" rx="4" fill="#fdeee6" stroke="#eb6834"/>
+  <text x="676" y="461" font-size="12" text-anchor="middle">N = 5</text>
+
+  <rect x="400" y="510" width="320" height="34" rx="6" fill="#f2f1ed" stroke="#b9b8b3"/>
+  <text x="416" y="532">copy back, output transforms</text>
+
+  <g stroke="#52514e" stroke-width="1.5" marker-end="url(#arrow)">
+    <line x1="560" y1="140" x2="560" y2="164"/>
+    <line x1="560" y1="200" x2="560" y2="212"/>
+    <line x1="560" y1="264" x2="560" y2="306"/>
+    <line x1="560" y1="358" x2="560" y2="368"/>
+    <line x1="560" y1="420" x2="560" y2="430"/>
+    <line x1="560" y1="482" x2="560" y2="508"/>
+  </g>
+
+</svg>

@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.venv/
+.DS_Store
+
+# Rollout videos and recorded observations are large; not kept in the repository.
+results/**/videos/
+results/**/records/
+
+# Output of new runs; the reference results are in results/.
+runs/

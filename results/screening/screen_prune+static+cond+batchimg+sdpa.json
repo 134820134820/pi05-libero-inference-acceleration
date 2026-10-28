@@ -1,0 +1,741 @@
+{
+ "variant": "prune+static+cond+batchimg+sdpa",
+ "lang_bucket": null,
+ "compile": "max-autotune",
+ "first_call_s": 200.54488629999105,
+ "iters": 100,
+ "warmup": 10,
+ "peak_mem_gib": 6.705103397369385,
+ "gpu": "NVIDIA GeForce RTX 5090",
+ "torch": "2.7.1+cu128",
+ "summary": {
+  "cpu_ms/host/input_transform": {
+   "p50": 0.09361800039187074,
+   "p95": 0.1081969472579658
+  },
+  "cpu_ms/host/output_transform": {
+   "p50": 0.03825745079666376,
+   "p95": 0.045224983477965
+  },
+  "cpu_ms/infer_e2e": {
+   "p50": 36.790278914850205,
+   "p95": 37.213957170024514
+  },
+  "cpu_ms/model/total": {
+   "p50": 0.5266909720376134,
+   "p95": 0.8405086351558566
+  },
+  "gpu_ms/model/total": {
+   "p50": 35.292030334472656,
+   "p95": 35.591802787780765
+  }
+ },
+ "rows": [
+  {
+   "cpu_ms/host/input_transform": 0.09517604485154152,
+   "cpu_ms/model/total": 0.5346050020307302,
+   "cpu_ms/host/output_transform": 0.03773707430809736,
+   "gpu_ms/model/total": 35.301727294921875,
+   "cpu_ms/infer_e2e": 36.79980698507279
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09176402818411589,
+   "cpu_ms/model/total": 0.5212360993027687,
+   "cpu_ms/host/output_transform": 0.037563033401966095,
+   "gpu_ms/model/total": 35.26736068725586,
+   "cpu_ms/infer_e2e": 36.74576396588236
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09490596130490303,
+   "cpu_ms/model/total": 0.5270090186968446,
+   "cpu_ms/host/output_transform": 0.037758960388600826,
+   "gpu_ms/model/total": 35.29075241088867,
+   "cpu_ms/infer_e2e": 36.85358690563589
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09349791798740625,
+   "cpu_ms/model/total": 0.5196550628170371,
+   "cpu_ms/host/output_transform": 0.037615071050822735,
+   "gpu_ms/model/total": 35.28700637817383,
+   "cpu_ms/infer_e2e": 36.78227204363793
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09330897592008114,
+   "cpu_ms/model/total": 0.525205978192389,
+   "cpu_ms/host/output_transform": 0.03816303797066212,
+   "gpu_ms/model/total": 35.292030334472656,
+   "cpu_ms/infer_e2e": 36.76864202134311
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0947329681366682,
+   "cpu_ms/model/total": 0.5245739594101906,
+   "cpu_ms/host/output_transform": 0.04449801053851843,
+   "gpu_ms/model/total": 35.31846237182617,
+   "cpu_ms/infer_e2e": 36.80394997354597
+  },
+  {
+   "cpu_ms/host/input_transform": 0.10273698717355728,
+   "cpu_ms/model/total": 0.8016669889912009,
+   "cpu_ms/host/output_transform": 0.04519103094935417,
+   "gpu_ms/model/total": 35.55833435058594,
+   "cpu_ms/infer_e2e": 37.143416004255414
+  },
+  {
+   "cpu_ms/host/input_transform": 0.11598109267652035,
+   "cpu_ms/model/total": 0.8547890465706587,
+   "cpu_ms/host/output_transform": 0.05995004903525114,
+   "gpu_ms/model/total": 35.62099075317383,
+   "cpu_ms/infer_e2e": 37.31542406603694
+  },
+  {
+   "cpu_ms/host/input_transform": 0.14849903527647257,
+   "cpu_ms/model/total": 1.3622079277411103,
+   "cpu_ms/host/output_transform": 0.08110399357974529,
+   "gpu_ms/model/total": 36.10550308227539,
+   "cpu_ms/infer_e2e": 38.00004499498755
+  },
+  {
+   "cpu_ms/host/input_transform": 0.17695699352771044,
+   "cpu_ms/model/total": 1.6854749992489815,
+   "cpu_ms/host/output_transform": 0.04516099579632282,
+   "gpu_ms/model/total": 36.41727828979492,
+   "cpu_ms/infer_e2e": 38.414990063756704
+  },
+  {
+   "cpu_ms/host/input_transform": 0.10814494453370571,
+   "cpu_ms/model/total": 1.1707040248438716,
+   "cpu_ms/host/output_transform": 0.03786396700888872,
+   "gpu_ms/model/total": 35.903968811035156,
+   "cpu_ms/infer_e2e": 37.54696494434029
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09571609552949667,
+   "cpu_ms/model/total": 0.5319539923220873,
+   "cpu_ms/host/output_transform": 0.03821204882115126,
+   "gpu_ms/model/total": 35.287105560302734,
+   "cpu_ms/infer_e2e": 36.83458094019443
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09591993875801563,
+   "cpu_ms/model/total": 0.5325940437614918,
+   "cpu_ms/host/output_transform": 0.038964091800153255,
+   "gpu_ms/model/total": 35.29743957519531,
+   "cpu_ms/infer_e2e": 36.77947900723666
+  },
+  {
+   "cpu_ms/host/input_transform": 0.10275200475007296,
+   "cpu_ms/model/total": 0.5458230152726173,
+   "cpu_ms/host/output_transform": 0.038690981455147266,
+   "gpu_ms/model/total": 35.31318283081055,
+   "cpu_ms/infer_e2e": 36.8072260171175
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09338895324617624,
+   "cpu_ms/model/total": 0.5409590667113662,
+   "cpu_ms/host/output_transform": 0.03735499922186136,
+   "gpu_ms/model/total": 35.27542495727539,
+   "cpu_ms/infer_e2e": 36.797504988498986
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09259709622710943,
+   "cpu_ms/model/total": 0.522783026099205,
+   "cpu_ms/host/output_transform": 0.04050205461680889,
+   "gpu_ms/model/total": 35.252254486083984,
+   "cpu_ms/infer_e2e": 36.731090978719294
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0953959533944726,
+   "cpu_ms/model/total": 0.5712530110031366,
+   "cpu_ms/host/output_transform": 0.03974896389991045,
+   "gpu_ms/model/total": 35.305152893066406,
+   "cpu_ms/infer_e2e": 36.83843603357673
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09681493975222111,
+   "cpu_ms/model/total": 0.6929950322955847,
+   "cpu_ms/host/output_transform": 0.03869796637445688,
+   "gpu_ms/model/total": 35.32819366455078,
+   "cpu_ms/infer_e2e": 36.83773602824658
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09557604789733887,
+   "cpu_ms/model/total": 0.5366139812394977,
+   "cpu_ms/host/output_transform": 0.038248952478170395,
+   "gpu_ms/model/total": 35.28950500488281,
+   "cpu_ms/infer_e2e": 36.801239009946585
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09556196164339781,
+   "cpu_ms/model/total": 0.5145339528098702,
+   "cpu_ms/host/output_transform": 0.04587008152157068,
+   "gpu_ms/model/total": 35.281280517578125,
+   "cpu_ms/infer_e2e": 36.800184985622764
+  },
+  {
+   "cpu_ms/host/input_transform": 0.10789500083774328,
+   "cpu_ms/model/total": 0.7584779523313046,
+   "cpu_ms/host/output_transform": 0.03946491051465273,
+   "gpu_ms/model/total": 35.49456024169922,
+   "cpu_ms/infer_e2e": 37.09335799794644
+  },
+  {
+   "cpu_ms/host/input_transform": 0.10021694470196962,
+   "cpu_ms/model/total": 0.6591590354219079,
+   "cpu_ms/host/output_transform": 0.03903498873114586,
+   "gpu_ms/model/total": 35.412960052490234,
+   "cpu_ms/infer_e2e": 36.94323799572885
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09631295688450336,
+   "cpu_ms/model/total": 0.5264789797365665,
+   "cpu_ms/host/output_transform": 0.03789504989981651,
+   "gpu_ms/model/total": 35.27519989013672,
+   "cpu_ms/infer_e2e": 36.76703094970435
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09131699334830046,
+   "cpu_ms/model/total": 0.5163650494068861,
+   "cpu_ms/host/output_transform": 0.03828294575214386,
+   "gpu_ms/model/total": 35.27062225341797,
+   "cpu_ms/infer_e2e": 36.80150501895696
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09206996764987707,
+   "cpu_ms/model/total": 0.5168250063434243,
+   "cpu_ms/host/output_transform": 0.03850401844829321,
+   "gpu_ms/model/total": 35.286014556884766,
+   "cpu_ms/infer_e2e": 36.762763978913426
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09180698543787003,
+   "cpu_ms/model/total": 0.5188289796933532,
+   "cpu_ms/host/output_transform": 0.04736497066915035,
+   "gpu_ms/model/total": 35.28841781616211,
+   "cpu_ms/infer_e2e": 36.82349598966539
+  },
+  {
+   "cpu_ms/host/input_transform": 0.10918499901890755,
+   "cpu_ms/model/total": 0.8581260917708278,
+   "cpu_ms/host/output_transform": 0.03965897485613823,
+   "gpu_ms/model/total": 35.59174346923828,
+   "cpu_ms/infer_e2e": 37.21276996657252
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09613798465579748,
+   "cpu_ms/model/total": 0.6675050826743245,
+   "cpu_ms/host/output_transform": 0.03799796104431152,
+   "gpu_ms/model/total": 35.39740753173828,
+   "cpu_ms/infer_e2e": 36.91341704688966
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09399303235113621,
+   "cpu_ms/model/total": 0.5266889929771423,
+   "cpu_ms/host/output_transform": 0.038116006180644035,
+   "gpu_ms/model/total": 35.26057434082031,
+   "cpu_ms/infer_e2e": 36.74770600628108
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09534601122140884,
+   "cpu_ms/model/total": 0.514863058924675,
+   "cpu_ms/host/output_transform": 0.03787002060562372,
+   "gpu_ms/model/total": 35.26998519897461,
+   "cpu_ms/infer_e2e": 36.78935603238642
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09325298015028238,
+   "cpu_ms/model/total": 0.5089599872007966,
+   "cpu_ms/host/output_transform": 0.038122059777379036,
+   "gpu_ms/model/total": 35.2740478515625,
+   "cpu_ms/infer_e2e": 36.7703870870173
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09333901107311249,
+   "cpu_ms/model/total": 0.5162770394235849,
+   "cpu_ms/host/output_transform": 0.038088997825980186,
+   "gpu_ms/model/total": 35.29119873046875,
+   "cpu_ms/infer_e2e": 36.78020206280053
+  },
+  {
+   "cpu_ms/host/input_transform": 0.093642040155828,
+   "cpu_ms/model/total": 0.527493073605001,
+   "cpu_ms/host/output_transform": 0.03919599112123251,
+   "gpu_ms/model/total": 35.29606246948242,
+   "cpu_ms/infer_e2e": 36.77745000459254
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09240501094609499,
+   "cpu_ms/model/total": 0.5203209584578872,
+   "cpu_ms/host/output_transform": 0.03765593282878399,
+   "gpu_ms/model/total": 35.25270462036133,
+   "cpu_ms/infer_e2e": 36.73489100765437
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09356392547488213,
+   "cpu_ms/model/total": 0.5162219749763608,
+   "cpu_ms/host/output_transform": 0.03843300510197878,
+   "gpu_ms/model/total": 35.26937484741211,
+   "cpu_ms/infer_e2e": 36.79922199808061
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09355996735394001,
+   "cpu_ms/model/total": 0.5284600192680955,
+   "cpu_ms/host/output_transform": 0.038471072912216187,
+   "gpu_ms/model/total": 35.29542541503906,
+   "cpu_ms/infer_e2e": 36.7853679927066
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09237299673259258,
+   "cpu_ms/model/total": 0.5227000219747424,
+   "cpu_ms/host/output_transform": 0.038051046431064606,
+   "gpu_ms/model/total": 35.288352966308594,
+   "cpu_ms/infer_e2e": 36.783549934625626
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09360699914395809,
+   "cpu_ms/model/total": 0.5240429891273379,
+   "cpu_ms/host/output_transform": 0.0383410369977355,
+   "gpu_ms/model/total": 35.276737213134766,
+   "cpu_ms/infer_e2e": 36.755435983650386
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09494402911514044,
+   "cpu_ms/model/total": 0.5324069643393159,
+   "cpu_ms/host/output_transform": 0.03807095345109701,
+   "gpu_ms/model/total": 35.301631927490234,
+   "cpu_ms/infer_e2e": 36.79127898067236
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09264599066227674,
+   "cpu_ms/model/total": 0.5179079016670585,
+   "cpu_ms/host/output_transform": 0.03873906098306179,
+   "gpu_ms/model/total": 35.262367248535156,
+   "cpu_ms/infer_e2e": 36.7746870033443
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09541504550725222,
+   "cpu_ms/model/total": 0.5678849993273616,
+   "cpu_ms/host/output_transform": 0.03866199404001236,
+   "gpu_ms/model/total": 35.3120002746582,
+   "cpu_ms/infer_e2e": 36.85439703986049
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09228801354765892,
+   "cpu_ms/model/total": 0.5395949119701982,
+   "cpu_ms/host/output_transform": 0.03826594911515713,
+   "gpu_ms/model/total": 35.304351806640625,
+   "cpu_ms/infer_e2e": 36.810270976275206
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09280804079025984,
+   "cpu_ms/model/total": 0.5324800731614232,
+   "cpu_ms/host/output_transform": 0.03832089714705944,
+   "gpu_ms/model/total": 35.3040657043457,
+   "cpu_ms/infer_e2e": 36.79076791740954
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09270000737160444,
+   "cpu_ms/model/total": 0.5222880281507969,
+   "cpu_ms/host/output_transform": 0.037661055102944374,
+   "gpu_ms/model/total": 35.280574798583984,
+   "cpu_ms/infer_e2e": 36.75384388770908
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0942380866035819,
+   "cpu_ms/model/total": 0.5129729397594929,
+   "cpu_ms/host/output_transform": 0.03739004023373127,
+   "gpu_ms/model/total": 35.28950500488281,
+   "cpu_ms/infer_e2e": 36.796118947677314
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09462994057685137,
+   "cpu_ms/model/total": 0.6246750708669424,
+   "cpu_ms/host/output_transform": 0.03941694740206003,
+   "gpu_ms/model/total": 35.244384765625,
+   "cpu_ms/infer_e2e": 36.745336023159325
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09398208931088448,
+   "cpu_ms/model/total": 0.5266929510980844,
+   "cpu_ms/host/output_transform": 0.0379650155082345,
+   "gpu_ms/model/total": 35.256961822509766,
+   "cpu_ms/infer_e2e": 36.74758202396333
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09464402683079243,
+   "cpu_ms/model/total": 0.5294349975883961,
+   "cpu_ms/host/output_transform": 0.03769202157855034,
+   "gpu_ms/model/total": 35.278465270996094,
+   "cpu_ms/infer_e2e": 36.7808339651674
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09348895400762558,
+   "cpu_ms/model/total": 0.5408559227362275,
+   "cpu_ms/host/output_transform": 0.038397032767534256,
+   "gpu_ms/model/total": 35.29817581176758,
+   "cpu_ms/infer_e2e": 36.78451001178473
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09537895675748587,
+   "cpu_ms/model/total": 0.5282750353217125,
+   "cpu_ms/host/output_transform": 0.03723090048879385,
+   "gpu_ms/model/total": 35.28153610229492,
+   "cpu_ms/infer_e2e": 36.788743105717
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09369698818773031,
+   "cpu_ms/model/total": 0.5232059629634023,
+   "cpu_ms/host/output_transform": 0.03775802906602621,
+   "gpu_ms/model/total": 35.29033660888672,
+   "cpu_ms/infer_e2e": 36.76971001550555
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09309209417551756,
+   "cpu_ms/model/total": 0.5243979394435883,
+   "cpu_ms/host/output_transform": 0.03751600161194801,
+   "gpu_ms/model/total": 35.30607986450195,
+   "cpu_ms/infer_e2e": 36.794451996684074
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09579502511769533,
+   "cpu_ms/model/total": 0.5310459528118372,
+   "cpu_ms/host/output_transform": 0.04042696673423052,
+   "gpu_ms/model/total": 35.27267074584961,
+   "cpu_ms/infer_e2e": 36.7765020346269
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09926094207912683,
+   "cpu_ms/model/total": 0.6189990090206265,
+   "cpu_ms/host/output_transform": 0.03859098069369793,
+   "gpu_ms/model/total": 35.363807678222656,
+   "cpu_ms/infer_e2e": 36.88430297188461
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09572599083185196,
+   "cpu_ms/model/total": 0.5820770747959614,
+   "cpu_ms/host/output_transform": 0.03749004099518061,
+   "gpu_ms/model/total": 35.35279846191406,
+   "cpu_ms/infer_e2e": 36.857004975900054
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09640108328312635,
+   "cpu_ms/model/total": 0.5238470621407032,
+   "cpu_ms/host/output_transform": 0.03830005880445242,
+   "gpu_ms/model/total": 35.29324722290039,
+   "cpu_ms/infer_e2e": 36.82084509637207
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09506894275546074,
+   "cpu_ms/model/total": 0.532309990376234,
+   "cpu_ms/host/output_transform": 0.037588062696158886,
+   "gpu_ms/model/total": 35.31536102294922,
+   "cpu_ms/infer_e2e": 36.8883078917861
+  },
+  {
+   "cpu_ms/host/input_transform": 0.092513975687325,
+   "cpu_ms/model/total": 0.5246070213615894,
+   "cpu_ms/host/output_transform": 0.038037076592445374,
+   "gpu_ms/model/total": 35.295711517333984,
+   "cpu_ms/infer_e2e": 36.81504703126848
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09133899584412575,
+   "cpu_ms/model/total": 0.5264229839667678,
+   "cpu_ms/host/output_transform": 0.03805698361247778,
+   "gpu_ms/model/total": 35.26259231567383,
+   "cpu_ms/infer_e2e": 36.75462701357901
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09173504076898098,
+   "cpu_ms/model/total": 0.5248569650575519,
+   "cpu_ms/host/output_transform": 0.040067010559141636,
+   "gpu_ms/model/total": 35.26553726196289,
+   "cpu_ms/infer_e2e": 36.75244306214154
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09511795360594988,
+   "cpu_ms/model/total": 0.5233120173215866,
+   "cpu_ms/host/output_transform": 0.038094003684818745,
+   "gpu_ms/model/total": 35.29296112060547,
+   "cpu_ms/infer_e2e": 36.7754390463233
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09260396473109722,
+   "cpu_ms/model/total": 0.5146260373294353,
+   "cpu_ms/host/output_transform": 0.03749004099518061,
+   "gpu_ms/model/total": 35.298465728759766,
+   "cpu_ms/infer_e2e": 36.82577097788453
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09255798067897558,
+   "cpu_ms/model/total": 0.5194749683141708,
+   "cpu_ms/host/output_transform": 0.03781204577535391,
+   "gpu_ms/model/total": 35.30083084106445,
+   "cpu_ms/infer_e2e": 36.80227103177458
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09370699990540743,
+   "cpu_ms/model/total": 0.5257820012047887,
+   "cpu_ms/host/output_transform": 0.03862904850393534,
+   "gpu_ms/model/total": 35.29935836791992,
+   "cpu_ms/infer_e2e": 36.7795480415225
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09293807670474052,
+   "cpu_ms/model/total": 0.5193769466131926,
+   "cpu_ms/host/output_transform": 0.038394005969166756,
+   "gpu_ms/model/total": 35.2720947265625,
+   "cpu_ms/infer_e2e": 36.74515301827341
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09282294195145369,
+   "cpu_ms/model/total": 0.5156960105523467,
+   "cpu_ms/host/output_transform": 0.038277008570730686,
+   "gpu_ms/model/total": 35.270721435546875,
+   "cpu_ms/infer_e2e": 36.76627099048346
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09470595978200436,
+   "cpu_ms/model/total": 0.5199519218876958,
+   "cpu_ms/host/output_transform": 0.04164595156908035,
+   "gpu_ms/model/total": 35.28518295288086,
+   "cpu_ms/infer_e2e": 36.81993193458766
+  },
+  {
+   "cpu_ms/host/input_transform": 0.10074896272271872,
+   "cpu_ms/model/total": 0.6289570592343807,
+   "cpu_ms/host/output_transform": 0.03883696626871824,
+   "gpu_ms/model/total": 35.390174865722656,
+   "cpu_ms/infer_e2e": 36.9282600004226
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09592203423380852,
+   "cpu_ms/model/total": 0.5760130006819963,
+   "cpu_ms/host/output_transform": 0.03762403503060341,
+   "gpu_ms/model/total": 35.3579216003418,
+   "cpu_ms/infer_e2e": 36.87905101105571
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09324203711003065,
+   "cpu_ms/model/total": 0.520175090059638,
+   "cpu_ms/host/output_transform": 0.03701390232890844,
+   "gpu_ms/model/total": 35.29315185546875,
+   "cpu_ms/infer_e2e": 36.77834500558674
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09173096623271704,
+   "cpu_ms/model/total": 0.5383429815992713,
+   "cpu_ms/host/output_transform": 0.037699006497859955,
+   "gpu_ms/model/total": 35.28879928588867,
+   "cpu_ms/infer_e2e": 36.83680004905909
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09314995259046555,
+   "cpu_ms/model/total": 0.5209209630265832,
+   "cpu_ms/host/output_transform": 0.037465011700987816,
+   "gpu_ms/model/total": 35.26006317138672,
+   "cpu_ms/infer_e2e": 36.744536948390305
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09493192192167044,
+   "cpu_ms/model/total": 0.5167870549485087,
+   "cpu_ms/host/output_transform": 0.03826594911515713,
+   "gpu_ms/model/total": 35.28303909301758,
+   "cpu_ms/infer_e2e": 36.78602597210556
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0925109488889575,
+   "cpu_ms/model/total": 0.6472269305959344,
+   "cpu_ms/host/output_transform": 0.03771297633647919,
+   "gpu_ms/model/total": 35.2993278503418,
+   "cpu_ms/infer_e2e": 36.776514956727624
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09127904195338488,
+   "cpu_ms/model/total": 0.5294319707900286,
+   "cpu_ms/host/output_transform": 0.03722903784364462,
+   "gpu_ms/model/total": 35.29340744018555,
+   "cpu_ms/infer_e2e": 36.782616982236505
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09202200453728437,
+   "cpu_ms/model/total": 0.5184930050745606,
+   "cpu_ms/host/output_transform": 0.03759097307920456,
+   "gpu_ms/model/total": 35.28927993774414,
+   "cpu_ms/infer_e2e": 36.788885947316885
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09351910557597876,
+   "cpu_ms/model/total": 0.5217649741098285,
+   "cpu_ms/host/output_transform": 0.039416016079485416,
+   "gpu_ms/model/total": 35.29305648803711,
+   "cpu_ms/infer_e2e": 36.78337298333645
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09573705028742552,
+   "cpu_ms/model/total": 0.5255049327388406,
+   "cpu_ms/host/output_transform": 0.03723800182342529,
+   "gpu_ms/model/total": 35.257503509521484,
+   "cpu_ms/infer_e2e": 36.77247604355216
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09470595978200436,
+   "cpu_ms/model/total": 0.5219320300966501,
+   "cpu_ms/host/output_transform": 0.0376430107280612,
+   "gpu_ms/model/total": 35.268062591552734,
+   "cpu_ms/infer_e2e": 36.783612915314734
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09360292460769415,
+   "cpu_ms/model/total": 0.5232529947534204,
+   "cpu_ms/host/output_transform": 0.03762205597013235,
+   "gpu_ms/model/total": 35.29884719848633,
+   "cpu_ms/infer_e2e": 36.78928501904011
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09333004709333181,
+   "cpu_ms/model/total": 0.531479949131608,
+   "cpu_ms/host/output_transform": 0.0391579233109951,
+   "gpu_ms/model/total": 35.28633499145508,
+   "cpu_ms/infer_e2e": 36.827284027822316
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09634299203753471,
+   "cpu_ms/model/total": 0.5734070437029004,
+   "cpu_ms/host/output_transform": 0.03959203604608774,
+   "gpu_ms/model/total": 35.33852767944336,
+   "cpu_ms/infer_e2e": 36.84823296498507
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09238498751074076,
+   "cpu_ms/model/total": 0.5449869204312563,
+   "cpu_ms/host/output_transform": 0.03867794293910265,
+   "gpu_ms/model/total": 35.30409622192383,
+   "cpu_ms/infer_e2e": 36.807716940529644
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09362900163978338,
+   "cpu_ms/model/total": 0.5167400231584907,
+   "cpu_ms/host/output_transform": 0.03855803515762091,
+   "gpu_ms/model/total": 35.25507354736328,
+   "cpu_ms/infer_e2e": 36.733195069245994
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09236903861165047,
+   "cpu_ms/model/total": 0.5272550042718649,
+   "cpu_ms/host/output_transform": 0.03849400673061609,
+   "gpu_ms/model/total": 35.28031921386719,
+   "cpu_ms/infer_e2e": 36.7731029400602
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09127904195338488,
+   "cpu_ms/model/total": 0.5284299841150641,
+   "cpu_ms/host/output_transform": 0.03775698132812977,
+   "gpu_ms/model/total": 35.30022430419922,
+   "cpu_ms/infer_e2e": 36.86784999445081
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09251793380826712,
+   "cpu_ms/model/total": 0.5290160188451409,
+   "cpu_ms/host/output_transform": 0.0387110048905015,
+   "gpu_ms/model/total": 35.292030334472656,
+   "cpu_ms/infer_e2e": 36.79255791939795
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09287300053983927,
+   "cpu_ms/model/total": 0.5270270630717278,
+   "cpu_ms/host/output_transform": 0.03769504837691784,
+   "gpu_ms/model/total": 35.29625701904297,
+   "cpu_ms/infer_e2e": 36.77826700732112
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09463401511311531,
+   "cpu_ms/model/total": 0.5211690440773964,
+   "cpu_ms/host/output_transform": 0.03848806954920292,
+   "gpu_ms/model/total": 35.30918502807617,
+   "cpu_ms/infer_e2e": 36.81893402244896
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09249802678823471,
+   "cpu_ms/model/total": 0.5215579876676202,
+   "cpu_ms/host/output_transform": 0.037304009310901165,
+   "gpu_ms/model/total": 35.289249420166016,
+   "cpu_ms/infer_e2e": 36.76114196423441
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09232806041836739,
+   "cpu_ms/model/total": 0.5229860544204712,
+   "cpu_ms/host/output_transform": 0.03840401768684387,
+   "gpu_ms/model/total": 35.27369689941406,
+   "cpu_ms/infer_e2e": 36.79730591829866
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09354809299111366,
+   "cpu_ms/model/total": 0.5384820979088545,
+   "cpu_ms/host/output_transform": 0.03842392470687628,
+   "gpu_ms/model/total": 35.30400085449219,
+   "cpu_ms/infer_e2e": 36.78978991229087
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09217392653226852,
+   "cpu_ms/model/total": 0.5308339605107903,
+   "cpu_ms/host/output_transform": 0.03808806650340557,
+   "gpu_ms/model/total": 35.28508758544922,
+   "cpu_ms/infer_e2e": 36.777588073164225
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09472901001572609,
+   "cpu_ms/model/total": 0.5295580485835671,
+   "cpu_ms/host/output_transform": 0.050829024985432625,
+   "gpu_ms/model/total": 35.30390548706055,
+   "cpu_ms/infer_e2e": 36.80745093151927
+  },
+  {
+   "cpu_ms/host/input_transform": 0.11382997035980225,
+   "cpu_ms/model/total": 0.8397570345550776,
+   "cpu_ms/host/output_transform": 0.04024989902973175,
+   "gpu_ms/model/total": 35.59292984008789,
+   "cpu_ms/infer_e2e": 37.236514035612345
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09859900455921888,
+   "cpu_ms/model/total": 0.6607729010283947,
+   "cpu_ms/host/output_transform": 0.03892299719154835,
+   "gpu_ms/model/total": 35.44198226928711,
+   "cpu_ms/infer_e2e": 36.98384703602642
+  },
+  {
+   "cpu_ms/host/input_transform": 0.093087088316679,
+   "cpu_ms/model/total": 0.5163580644875765,
+   "cpu_ms/host/output_transform": 0.03785197623074055,
+   "gpu_ms/model/total": 35.244415283203125,
+   "cpu_ms/infer_e2e": 36.73021006397903
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09184994269162416,
+   "cpu_ms/model/total": 0.5170379299670458,
+   "cpu_ms/host/output_transform": 0.03740796819329262,
+   "gpu_ms/model/total": 35.26172637939453,
+   "cpu_ms/infer_e2e": 36.73779498785734
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0927529763430357,
+   "cpu_ms/model/total": 0.5237910663709044,
+   "cpu_ms/host/output_transform": 0.03776303492486477,
+   "gpu_ms/model/total": 35.304481506347656,
+   "cpu_ms/infer_e2e": 36.81489801965654
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09223492816090584,
+   "cpu_ms/model/total": 0.522937043569982,
+   "cpu_ms/host/output_transform": 0.037823920138180256,
+   "gpu_ms/model/total": 35.26950454711914,
+   "cpu_ms/infer_e2e": 36.77016799338162
+  }
+ ],
+ "graph_breaks": {},
+ "trace": {
+  "kernels_per_infer": 4002.0,
+  "gpu_busy_ms": 33.491803199999694,
+  "wall_ms": 39.39203599002212
+ }
+}

@@ -1,0 +1,10 @@
+[project]
+name = "pi05-libero-inference-acceleration"
+version = "0.1.0"
+description = "Latency profiling and acceleration of pi0.5 (openpi) inference on an RTX 5090, checked on LIBERO"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["openpi"]  # official openpi checkout, PyTorch path; see README for setup
+
+[tool.setuptools]
+py-modules = ["pi05_accel"]

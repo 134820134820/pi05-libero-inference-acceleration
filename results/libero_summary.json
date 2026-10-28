@@ -1,0 +1,130 @@
+{
+ "int8_s0": {
+  "libero_spatial": 490,
+  "libero_object": 491,
+  "libero_goal": 485,
+  "libero_10": 467,
+  "total": 1933,
+  "rate": 0.9665
+ },
+ "int8_s1": {
+  "libero_spatial": 492,
+  "libero_object": 495,
+  "libero_goal": 491,
+  "libero_10": 464,
+  "total": 1942,
+  "rate": 0.971
+ },
+ "int8_s2": {
+  "libero_spatial": 492,
+  "libero_object": 495,
+  "libero_goal": 491,
+  "libero_10": 473,
+  "total": 1951,
+  "rate": 0.9755
+ },
+ "int8_steps5_s0": {
+  "libero_spatial": 497,
+  "libero_object": 494,
+  "libero_goal": 486,
+  "libero_10": 464,
+  "total": 1941,
+  "rate": 0.9705
+ },
+ "int8_steps5_s1": {
+  "libero_spatial": 491,
+  "libero_object": 493,
+  "libero_goal": 492,
+  "libero_10": 465,
+  "total": 1941,
+  "rate": 0.9705
+ },
+ "int8_steps5_s2": {
+  "libero_spatial": 489,
+  "libero_object": 495,
+  "libero_goal": 489,
+  "libero_10": 467,
+  "total": 1940,
+  "rate": 0.97
+ },
+ "openpi_serve_policy": {
+  "libero_spatial": 493,
+  "libero_object": 495,
+  "libero_goal": 491,
+  "libero_10": 458,
+  "total": 1937,
+  "rate": 0.9685
+ },
+ "steps5_s0": {
+  "libero_spatial": 491,
+  "libero_object": 495,
+  "libero_goal": 485,
+  "libero_10": 466,
+  "total": 1937,
+  "rate": 0.9685
+ },
+ "steps5_s1": {
+  "libero_spatial": 491,
+  "libero_object": 496,
+  "libero_goal": 484,
+  "libero_10": 457,
+  "total": 1928,
+  "rate": 0.964
+ },
+ "steps5_s2": {
+  "libero_spatial": 493,
+  "libero_object": 492,
+  "libero_goal": 486,
+  "libero_10": 467,
+  "total": 1938,
+  "rate": 0.969
+ },
+ "stock_s0": {
+  "libero_spatial": 491,
+  "libero_object": 494,
+  "libero_goal": 488,
+  "libero_10": 471,
+  "total": 1944,
+  "rate": 0.972
+ },
+ "stock_s1": {
+  "libero_spatial": 485,
+  "libero_object": 493,
+  "libero_goal": 485,
+  "libero_10": 467,
+  "total": 1930,
+  "rate": 0.965
+ },
+ "stock_s2": {
+  "libero_spatial": 493,
+  "libero_object": 495,
+  "libero_goal": 484,
+  "libero_10": 459,
+  "total": 1931,
+  "rate": 0.9655
+ },
+ "tier1_s0": {
+  "libero_spatial": 489,
+  "libero_object": 492,
+  "libero_goal": 482,
+  "libero_10": 458,
+  "total": 1921,
+  "rate": 0.9605
+ },
+ "tier1_s1": {
+  "libero_spatial": 492,
+  "libero_object": 491,
+  "libero_goal": 481,
+  "libero_10": 466,
+  "total": 1930,
+  "rate": 0.965
+ },
+ "tier1_s2": {
+  "libero_spatial": 494,
+  "libero_object": 493,
+  "libero_goal": 489,
+  "libero_10": 463,
+  "total": 1939,
+  "rate": 0.9695
+ }
+}

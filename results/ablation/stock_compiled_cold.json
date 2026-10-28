@@ -1,0 +1,177 @@
+{
+ "variant": "stock",
+ "compile": "max-autotune",
+ "first_call_s": 126.80290829099249,
+ "iters": 20,
+ "warmup": 2,
+ "peak_mem_gib": 7.199702739715576,
+ "gpu": "NVIDIA GeForce RTX 5090",
+ "torch": "2.7.1+cu128",
+ "summary": {
+  "cpu_ms/host/input_transform": {
+   "p50": 0.08793798042461276,
+   "p95": 0.10118868085555734
+  },
+  "cpu_ms/host/output_transform": {
+   "p50": 0.03973051207140088,
+   "p95": 0.04349049995653331
+  },
+  "cpu_ms/infer_e2e": {
+   "p50": 45.862864004448056,
+   "p95": 46.13860215758905
+  },
+  "cpu_ms/model/total": {
+   "p50": 44.25891302525997,
+   "p95": 44.46327820769511
+  },
+  "gpu_ms/model/total": {
+   "p50": 44.27497482299805,
+   "p95": 44.47999992370605
+  }
+ },
+ "rows": [
+  {
+   "cpu_ms/host/input_transform": 0.11528097093105316,
+   "cpu_ms/model/total": 44.36674900352955,
+   "cpu_ms/host/output_transform": 0.04048494156450033,
+   "gpu_ms/model/total": 44.38217544555664,
+   "cpu_ms/infer_e2e": 46.065039932727814
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0893190735951066,
+   "cpu_ms/model/total": 44.131094007752836,
+   "cpu_ms/host/output_transform": 0.03919890150427818,
+   "gpu_ms/model/total": 44.146942138671875,
+   "cpu_ms/infer_e2e": 45.73873104527593
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08794700261205435,
+   "cpu_ms/model/total": 44.17150607332587,
+   "cpu_ms/host/output_transform": 0.03984698560088873,
+   "gpu_ms/model/total": 44.18764877319336,
+   "cpu_ms/infer_e2e": 45.77477800194174
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08761801291257143,
+   "cpu_ms/model/total": 44.15999201592058,
+   "cpu_ms/host/output_transform": 0.04170194733887911,
+   "gpu_ms/model/total": 44.176063537597656,
+   "cpu_ms/infer_e2e": 45.797804021276534
+  },
+  {
+   "cpu_ms/host/input_transform": 0.10044698137789965,
+   "cpu_ms/model/total": 44.19381101615727,
+   "cpu_ms/host/output_transform": 0.038962927646934986,
+   "gpu_ms/model/total": 44.209983825683594,
+   "cpu_ms/infer_e2e": 45.80140404868871
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0877609709277749,
+   "cpu_ms/model/total": 44.17431203182787,
+   "cpu_ms/host/output_transform": 0.043405103497207165,
+   "gpu_ms/model/total": 44.19209671020508,
+   "cpu_ms/infer_e2e": 45.7618871005252
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09388802573084831,
+   "cpu_ms/model/total": 44.28692103829235,
+   "cpu_ms/host/output_transform": 0.04141894169151783,
+   "gpu_ms/model/total": 44.30329513549805,
+   "cpu_ms/infer_e2e": 46.026202966459095
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0872630625963211,
+   "cpu_ms/model/total": 44.28655805531889,
+   "cpu_ms/host/output_transform": 0.0392149668186903,
+   "gpu_ms/model/total": 44.302974700927734,
+   "cpu_ms/infer_e2e": 45.882949023507535
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08792895823717117,
+   "cpu_ms/model/total": 44.21485005877912,
+   "cpu_ms/host/output_transform": 0.041758990846574306,
+   "gpu_ms/model/total": 44.23155212402344,
+   "cpu_ms/infer_e2e": 45.80435296520591
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08934293873608112,
+   "cpu_ms/model/total": 44.20579306315631,
+   "cpu_ms/host/output_transform": 0.03855407703667879,
+   "gpu_ms/model/total": 44.22265625,
+   "cpu_ms/infer_e2e": 45.791627024300396
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08317094761878252,
+   "cpu_ms/model/total": 44.270457001402974,
+   "cpu_ms/host/output_transform": 0.03833603113889694,
+   "gpu_ms/model/total": 44.28691101074219,
+   "cpu_ms/infer_e2e": 45.84277898538858
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08396001067012548,
+   "cpu_ms/model/total": 44.24736904911697,
+   "cpu_ms/host/output_transform": 0.039233011193573475,
+   "gpu_ms/model/total": 44.263038635253906,
+   "cpu_ms/infer_e2e": 45.935261994600296
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08507596794515848,
+   "cpu_ms/model/total": 44.22784398775548,
+   "cpu_ms/host/output_transform": 0.03944092895835638,
+   "gpu_ms/model/total": 44.24403381347656,
+   "cpu_ms/infer_e2e": 45.81245209556073
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08588191121816635,
+   "cpu_ms/model/total": 44.24504400230944,
+   "cpu_ms/host/output_transform": 0.039323000237345695,
+   "gpu_ms/model/total": 44.26153564453125,
+   "cpu_ms/infer_e2e": 45.83491198718548
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08654803968966007,
+   "cpu_ms/model/total": 44.74518494680524,
+   "cpu_ms/host/output_transform": 0.04170800093561411,
+   "gpu_ms/model/total": 44.763328552246094,
+   "cpu_ms/infer_e2e": 46.334437909536064
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09300000965595245,
+   "cpu_ms/model/total": 44.318725005723536,
+   "cpu_ms/host/output_transform": 0.039726030081510544,
+   "gpu_ms/model/total": 44.3353271484375,
+   "cpu_ms/infer_e2e": 45.97204504534602
+  },
+  {
+   "cpu_ms/host/input_transform": 0.0868489732965827,
+   "cpu_ms/model/total": 44.382893946021795,
+   "cpu_ms/host/output_transform": 0.045113032683730125,
+   "gpu_ms/model/total": 44.401920318603516,
+   "cpu_ms/infer_e2e": 46.03625705931336
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09496300481259823,
+   "cpu_ms/model/total": 44.44844101089984,
+   "cpu_ms/host/output_transform": 0.04080892540514469,
+   "gpu_ms/model/total": 44.465087890625,
+   "cpu_ms/infer_e2e": 46.12829501274973
+  },
+  {
+   "cpu_ms/host/input_transform": 0.09513297118246555,
+   "cpu_ms/model/total": 44.34138897340745,
+   "cpu_ms/host/output_transform": 0.03897491842508316,
+   "gpu_ms/model/total": 44.35881423950195,
+   "cpu_ms/infer_e2e": 46.02527501992881
+  },
+  {
+   "cpu_ms/host/input_transform": 0.08969299960881472,
+   "cpu_ms/model/total": 44.34983502142131,
+   "cpu_ms/host/output_transform": 0.03973499406129122,
+   "gpu_ms/model/total": 44.3671989440918,
+   "cpu_ms/infer_e2e": 45.96905398648232
+  }
+ ],
+ "graph_breaks": {
+  "Unsupported method call\n  Explanation: Dynamo does not know how to trace method `issubset` of class `set`\n  Hint: Avoid calling `set.issubset` in your code.\n  Hint: Please report an issue to PyTorch.\n\n  Developer debug context: call_method SetVariable() issubset [ConstDictVariable()] {}\n": 4
+ }
+}
